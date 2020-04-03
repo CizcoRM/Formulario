@@ -21,12 +21,12 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
 		*San José Guayabal*%0A
-		*Formulario*%0A%0A
+		*Formulario paquete solidario*%0A%0A
 		*¿Cuál es tu nombre?*%0A
 		${nombre}%0A
 		*DUI:*%0A
 		${dui}%0A
-                *Telefono:*%0A
+              *Telefono:*%0A
 		${telefonoc}%0A
 		*Dirección:*%0A
 		${direccion}%0A
