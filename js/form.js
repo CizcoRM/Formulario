@@ -20,7 +20,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   resp.classList.remove("send");
 
   let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
-		*Gobierno de San José Guayabal*%0A
+		*San José Guayabal*%0A
 		*Formulario*%0A%0A
 		*¿Cuál es tu nombre?*%0A
 		${nombre}%0A
