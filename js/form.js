@@ -7,7 +7,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   let nombre = document.querySelector("#nombre").value;
   let dui = document.querySelector("#dui").value;
   let direccion = document.querySelector("#direccion").value;
-  let telefonoc = document.querySelector("#telefonoc").value;
+  let tele = document.querySelector("#tele").value;
   let miembros = document.querySelector("#miembros").value;
   let duis = document.querySelector("#duis").value;
   let subsidio = document.querySelector("#subsidio").value;
@@ -29,7 +29,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 		*Dirección:*%0A
          ${direccion}%0A
         *Telefono:*%0A
-        ${telefonoc}%0A
+        ${tele}%0A
 		*Miembros de la familia:*%0A
 		${miembros}%0A
 		*Duis:*%0A
@@ -43,7 +43,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 		*¿Acepto los terminos?*%0A
 		${acepto}%0A`;
 
-  if (nombre === "" || dui === "" || direccion === "" || miembros === "" || duis === "" || subsidio === "" || salario === "" || negocio === "" || acepto === "") {
+  if (nombre === "" || dui === "" || direccion === "" || miembros === "" || duis === "" || subsidio === "" || salario === "" || negocio === "" || acepto === "" || tele === "") {
     resp.classList.add("fail");
     resp.innerHTML = `Faltan algunos datos, ${nombre}`;
     return false;
