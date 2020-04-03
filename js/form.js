@@ -21,7 +21,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
 *San José Guayabal*%0A*Formulario Paquete Solidario*%0A%0A*¿Cuál es tu nombre?*%0A${nombre}%0A*DUI:*%0A${dui}%0A*Dirección:*%0A${direccion}%0A*Telefono:*%0A${tele}%0A*Miembros de la familia:*%0A${miembros}%0A*Duis:*%0A${duis}
-%0A*¿Recibio Subsidio?*%0A${subsidio}%0A*¿Recibe Salario?*%0A${salario}%0A*¿Tiene negocio?*%0A${negocio}%0A*¿Acepto los terminos?*%0A${acepto}%0A`;
+%0A *¿Recibio Subsidio?*%0A${subsidio}%0A*¿Recibe Salario?*%0A${salario}%0A*¿Tiene negocio?*%0A${negocio}%0A*¿Acepto los terminos?*%0A${acepto}%0A`;
 
   if (nombre === "" || dui === "" || direccion === "" || miembros === "" || duis === "" || subsidio === "" || salario === "" || negocio === "" || acepto === "" || tele === "") {
     resp.classList.add("fail");
