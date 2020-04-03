@@ -27,8 +27,8 @@ document.querySelector("#submit").addEventListener("click", e => {
 		*DUI:*%0A
 		${dui}%0A
 		*Dirección:*%0A
-    ${direccion}
-    *Telefono:*
+    ${direccion}%0A
+    *Telefono:*%0A
     ${telefonoc}%0A
 		*Miembros de la familia:*%0A
 		${miembros}%0A
