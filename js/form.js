@@ -6,8 +6,8 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   let nombre = document.querySelector("#nombre").value;
   let dui = document.querySelector("#dui").value;
-  let telefonoc = document.querySelector("#telefonoc").value;
   let direccion = document.querySelector("#direccion").value;
+  let telefonoc = document.querySelector("#telefonoc").value;
   let miembros = document.querySelector("#miembros").value;
   let duis = document.querySelector("#duis").value;
   let subsidio = document.querySelector("#subsidio").value;
@@ -21,16 +21,16 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
 		*San José Guayabal*%0A
-		*Formulario paquete solidario*%0A%0A
+		*Formulario Paquete Solidario*%0A%0A
 		*¿Cuál es tu nombre?*%0A
 		${nombre}%0A
 		*DUI:*%0A
-		${dui}%0A*}
-Telefono:*%0A
-		${telefonoc}%0A
+		${dui}%0A
 		*Dirección:*%0A
-		${direccion}%0A
-		*Miembros:*%0A
+    ${direccion}%0A
+    *Telefono:*%0A
+    ${telefonoc}%0A
+		*Miembros de la familia:*%0A
 		${miembros}%0A
 		*Duis:*%0A
 		${duis}
@@ -51,7 +51,6 @@ Telefono:*%0A
   resp.classList.remove("fail");
   resp.classList.add("send");
   resp.innerHTML = `Se ha enviado tu formulario, ${nombre}`;
-  resp.innerHTML = `Se verificaran y se dara una resolución`;	
 
   window.open(url);
 });
